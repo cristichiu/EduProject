@@ -1,0 +1,7 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+#root { width: 100%; min-height: 100vh; }
+iframe { min-height: 100vh; }
+.absPos { position: absolute; width: 100%; }
+body { overflow: hidden; background: #9B00FF; }
+.keys { position: absolute; z-index: 1000; color: white; font-size: 4rem; display: flex; bottom: 0; left: 0; }
+.key { margin: 1rem; cursor: pointer; }
