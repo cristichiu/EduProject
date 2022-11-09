@@ -1,0 +1,7 @@
+.loadingLogo { min-width: 100px; max-width: 200px; width: 30vw; }
+.loadingLogo > path {
+    --delay: 0;
+    animation: animatieLogo 2s ease-in-out infinite var(--delay);
+}
+
+@keyframes animatieLogo { 100% { stroke-dashoffset: 0; } }

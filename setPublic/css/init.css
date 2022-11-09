@@ -1,7 +1,14 @@
 * { padding: 0; margin: 0; box-sizing: border-box; }
-#root { width: 100%; min-height: 100vh; }
+#root { width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center; background: url('../img/stele.jpg'); background-size: cover; background-attachment: fixed; background-position: center; }
 iframe { min-height: 100vh; }
-.absPos { position: absolute; width: 100%; }
-body { overflow: hidden; background: #9B00FF; }
+.absPos { position: absolute; width: 100%; display: flex; justify-content: center; align-items: center;  }
+body { overflow: hidden; min-height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center; background: black; }
 .keys { position: absolute; z-index: 1000; color: white; font-size: 4rem; display: flex; bottom: 0; left: 0; }
 .key { margin: 1rem; cursor: pointer; }
+
+.introducere { color: transparent; font-size: 10vw; position: relative;  -webkit-text-stroke: 1px rgba(145, 145, 145, .3); text-transform: uppercase; }
+.introducere::after { content: attr(data-text); color: rgb(153, 255, 0); position: absolute; top: 0; left: 0; width: 0; border-right: 3px solid rgb(153, 255, 0); overflow: hidden; text-shadow: 0 0 10px rgb(153, 255, 0); box-shadow: 10px 0 10px -10px rgb(153, 255, 0); animation: introducere 2.5s ease-in-out forwards; }
+@keyframes introducere {
+    20%{ width: 30%; }
+    100%{ width: 100%; }
+}

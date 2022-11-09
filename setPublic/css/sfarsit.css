@@ -1,0 +1,7 @@
+.mainSfarsit { width: 70vw; }
+.mainSfarsit > path {
+    --delay: 0;
+    animation: animatie 2s ease-in-out forwards;
+}
+
+@keyframes animatie { 100% { stroke-dasharray: 0; } }
