@@ -5,6 +5,7 @@
 .container > div > h1 { opacity: 0; transition: .1s; transition-delay: 0s; scale: 0; }
 .container > div > h3 { opacity: 0; transition: .1s; transition-delay: 0s; scale: 0; }
 .container > div:nth-child(1) { background: url('../img/nu1.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); }
+.container > div:nth-child(1) > * { color: black }
 .container > div:nth-child(2) { background: url('../img/nu2.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); scale: 1.01 }
 .container > div:nth-child(3) { background: url('../img/nu3.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); scale: 1.01 }
 .container > div:hover > h1, .container > div:focus > h1, .container > div:active > h1 { opacity: 1; scale: 1; transition: 1s; transition-delay: .7s; }
