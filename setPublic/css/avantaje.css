@@ -1,11 +1,11 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 .container { min-width: 200px; max-width: 1000px; width: 70vw; height: 70vh; animation: apear .5s ease-in forwards; border-radius: 1rem; display: flex; }
 .container > div { width: 33.333%; height: 100%; background: black; box-shadow: 5px 0 20px 10px black, inset 1px 1px 10px white; border-radius: 1rem; transition: 1s; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-.container > div > * { text-align: center; width: 70%; margin: 1rem; color: white; border-radius: 1rem; }
+.container > div > * { text-align: center; width: 70%; margin: 1rem; color: white; border-radius: 1rem; text-shadow: 0 0 10px black; }
 .container > div > h1 { opacity: 0; transition: .1s; transition-delay: 0s; scale: 0; }
 .container > div > h3 { opacity: 0; transition: .1s; transition-delay: 0s; scale: 0; }
 .container > div:nth-child(1) { background: url('../img/nu1.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); }
-.container > div:nth-child(1) > * { color: black }
+.container > div:nth-child(1) > * { color: black; text-shadow: 0 0 10px white; }
 .container > div:nth-child(2) { background: url('../img/nu2.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); scale: 1.01 }
 .container > div:nth-child(3) { background: url('../img/nu3.jpg'); background-size: cover; background-position: center; filter: grayscale(100%); scale: 1.01 }
 .container > div:hover > h1, .container > div:focus > h1, .container > div:active > h1 { opacity: 1; scale: 1; transition: 1s; transition-delay: .7s; }
